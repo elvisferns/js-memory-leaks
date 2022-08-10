@@ -5,9 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JS Memory leaks</title>
+    <style>
+      button {
+        border-radius: 5px;
+        border-width: 1px;
+        border-color: gray;
+        padding: 8px;
+        font-size: 14px;
+        background-color: transparent;
+        box-shadow: 0px 0px 3px 0px grey;
+        cursor: pointer;
+      }
+
+      .chapter {
+        padding: 10px 0;
+        border-bottom: 1px solid gray;
+      }
+    </style>
   </head>
   <body>
-    <div>Memory leaks</div>
+    <h1>Memory leaks</h1>
+    <main>
+      <div class="chapter chapter1">
+        <button id="makeCar">Create Car</button>
+        <button id="clearCar">Clear reference</button>
+        <button id="deleteCar">Delete Car</button>
+      </div>
+    </main>
     <script type="text/javascript" defer src="index.js"></script>
   </body>
 </html>

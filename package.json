@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "http-server -c-1"
+    "start": "nodemon --exec http-server -c-1"
   },
   "keywords": [
     "js",
@@ -15,6 +15,7 @@
   "author": "Elvis",
   "license": "ISC",
   "dependencies": {
-    "http-server": "^14.1.1"
+    "http-server": "^14.1.1",
+    "nodemon": "^2.0.19"
   }
 }
