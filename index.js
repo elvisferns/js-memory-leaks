@@ -10,22 +10,24 @@ class Car {
   }
 }
 
+window.cars = [];
 document.querySelector('#makeCar').addEventListener('click', () => {
   if (!window.carObj1) {
-    window.cars = [];
     window.carObj1 = new Car('FORD');
     window.cars.push(window.carObj1);
-    window.alert('Car created successfully');
+    window.alert('Car created');
   }
 });
 
 document.querySelector('#clearCar').addEventListener('click', () => {
   window.carObj1 = null;
+  window.alert('Car reference cleared');
 });
 
 document.querySelector('#deleteCar').addEventListener('click', () => {
   window.cars = window.cars.filter(car => car !== window.carObj1);
   window.carObj1 = null;
+  window.alert('Car deleted');
 });
 
 
